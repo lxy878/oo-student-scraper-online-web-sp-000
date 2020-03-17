@@ -32,7 +32,7 @@ class Scraper
       elsif link.include?("linkedin.com")
         new_hash[:linkedin] = link
       elsif if link.include?("github.com")
-
+        new_hash[:github] = link
       else
 
       end
