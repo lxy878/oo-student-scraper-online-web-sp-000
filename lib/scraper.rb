@@ -9,6 +9,7 @@ class Scraper
     a = doc.first
     # name = doc.css("h4.student-name").text
     # location = doc.css("p.student-location").text
+    # profile_url = doc.css("a").attribute("href").value
     data = []
     # doc.each do |element|
     #   name = element.css("h4.student-name").text
