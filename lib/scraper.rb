@@ -34,7 +34,7 @@ class Scraper
       elsif if link.include?("github.com")
         new_hash[:github] = link
       else
-
+        new_hash[:blog] = link
       end
     end
     # profile_quote = doc.css("div.profile-quote").text
