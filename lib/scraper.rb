@@ -13,8 +13,8 @@ class Scraper
       name = element.css("h4.student-name").text
       location = element.css("p.student-location").text
       new_hash = {
-        :name => name,
-        :location => location
+        :location => location,
+        :name => name
       }
       data << new_hash
     end
