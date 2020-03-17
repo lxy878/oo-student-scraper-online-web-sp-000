@@ -11,16 +11,16 @@ class Scraper
     # location = doc.css("p.student-location").text
     # profile_url = doc.css("a").attribute("href").value
     data = []
-    # doc.each do |element|
-    #   name = element.css("h4.student-name").text
-    #   location = element.css("p.student-location").text
-    #   new_hash = {
-    #     :location => location,
-    #     :name => name
-    #   }
-    #   data << new_hash
-    # end
-    binding.pry
+    doc.each do |element|
+      name = element.css("h4.student-name").text
+      location = element.css("p.student-location").text
+      new_hash = {
+        :location => location,
+        :name => name
+      }
+      data << new_hash
+    end
+    # binding.pry
     data
   end
 
