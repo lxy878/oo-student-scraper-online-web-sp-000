@@ -14,9 +14,11 @@ class Scraper
     doc.each do |element|
       name = element.css("h4.student-name").text
       location = element.css("p.student-location").text
+      profile_url = doc.css("a").attribute("href").value
       new_hash = {
         :location => location,
         :name => name
+        :profile_url => profile_url
       }
       data << new_hash
     end
