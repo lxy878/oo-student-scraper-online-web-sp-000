@@ -22,6 +22,7 @@ class Scraper
   end
 
   def self.scrape_profile_page(profile_url)
+    new_hash = {}
     doc = Nokogiri::HTML(open(profile_url)).css("div.main-wrapper.profile")
     urls =  doc.css("div.social-icon-container a")
     urls.each do |url|
@@ -33,7 +34,7 @@ class Scraper
       elsif if link.include?("github.com")
 
       else
-        
+
       end
     end
     # profile_quote = doc.css("div.profile-quote").text
