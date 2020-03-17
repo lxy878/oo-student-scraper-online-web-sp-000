@@ -17,7 +17,7 @@ class Scraper
       profile_url = doc.css("a").attribute("href").value
       new_hash = {
         :location => location,
-        :name => name
+        :name => name,
         :profile_url => profile_url
       }
       data << new_hash
