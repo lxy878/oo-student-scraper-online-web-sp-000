@@ -27,6 +27,12 @@ class Scraper
     urls.each do |url|
       link=url.attribute("href").value
       if link.include?("twitter.com")
+
+      elsif link.include?("linkedin.com")
+
+      elsif if link.include?("github.com")
+
+      else
         
       end
     end
