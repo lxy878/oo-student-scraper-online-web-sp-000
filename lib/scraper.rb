@@ -22,7 +22,6 @@ class Scraper
       }
       data << new_hash
     end
-    # binding.pry
     data
   end
 
