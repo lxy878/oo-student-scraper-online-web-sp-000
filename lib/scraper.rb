@@ -31,7 +31,7 @@ class Scraper
         new_hash[:twitter] = link
       elsif link.include?("linkedin.com")
         new_hash[:linkedin] = link
-      elsif if link.include?("github.com")
+      elsif link.include?("github.com")
         new_hash[:github] = link
       else
         new_hash[:blog] = link
