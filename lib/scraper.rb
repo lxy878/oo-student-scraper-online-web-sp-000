@@ -10,10 +10,11 @@ class Scraper
     # location = doc.css("p.student-location").text
     array = []
     doc.each do |element|
-      name = doc.css("h4.student-name").text
+      name = element.css("h4.student-name").text
+      location = element.css("p.student-location").text
       new_hash = {
         :name => name,
-        :location => 
+        :location => location
       }
     end
     binding.pry
