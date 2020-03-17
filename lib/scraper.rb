@@ -16,7 +16,6 @@ class Scraper
         :location => location,
         :name => name
       }
-      puts new_hash
       data << new_hash
     end
     # binding.pry
