@@ -37,10 +37,11 @@ class Scraper
         new_hash[:blog] = link
       end
     end
-    # profile_quote = doc.css("div.profile-quote").text
-    # bio = doc.css("div.description-holder p").text
-    a = doc.first
-    binding.pry
+    profile_quote = doc.css("div.profile-quote").text
+    bio = doc.css("div.description-holder p").text
+    new_hash[:profile_quote] = profile_quote
+    new_hash[:bio] = bio
+    # binding.pry
   end
 
 end
