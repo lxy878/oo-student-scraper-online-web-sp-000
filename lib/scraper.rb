@@ -8,7 +8,7 @@ class Scraper
     doc = Nokogiri::HTML(open(index_url)).css("div.student-card")
     # name = doc.css("h4.student-name").text
     # location = doc.css("p.student-location").text
-    array = []
+    data = []
     doc.each do |element|
       name = element.css("h4.student-name").text
       location = element.css("p.student-location").text
@@ -16,6 +16,7 @@ class Scraper
         :name => name,
         :location => location
       }
+      data << new_hash
     end
     binding.pry
   end
